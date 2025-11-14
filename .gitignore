@@ -1,0 +1,79 @@
+# ===============================
+# Visual Studio Database Project
+# SSDT / SQL Server Data Tools
+# ===============================
+
+# Build output
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/sql/
+**/GeneratedArtifacts/
+**/PublishScripts/
+
+# Build artifacts created by SSDT
+*.dacpac
+*.bacpac
+*.dbmdl
+*.refactorlog
+
+# Schema compare temporary files
+*.scmp
+*.scmp.settings
+
+# Local publish profiles
+*.publish.xml
+*.publishsettings
+*.publishproj
+
+# SQL Server test / deployment files
+*.sqlsettings
+*.deploymanifest
+
+# Logs and temp files
+*.log
+*.tlog
+*.tmp
+*.cache
+*.vssscc
+*.user
+*.suo
+
+# Backup & restore files
+*.bak
+*.trn
+
+# Visual Studio settings
+.vs/
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.psess
+*.vsp
+*.vspscc
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Dotnet build intermediate
+project.lock.json
+project.fragment.lock.json
+
+# OS specific
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Mac
+.DS_Store
+ 
+# Redgate SQL Source Control
+*.jfm
+*.scmp
+RedGate/
+RedGateTemp/
