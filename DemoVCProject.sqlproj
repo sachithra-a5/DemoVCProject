@@ -78,5 +78,7 @@
     <Build Include="dbo\Stored Procedures\GetOrdersByCustomer.sql" />
     <Build Include="dbo\Stored Procedures\CreateOrder.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\Payments.sql" />
+    <Build Include="dbo\Stored Procedures\AddPayment.sql" />
   </ItemGroup>
 </Project>
