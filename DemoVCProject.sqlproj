@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{bcf5c07f-79f5-45f4-9744-f94f1903a502}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -80,5 +80,8 @@
     <Build Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\Payments.sql" />
     <Build Include="dbo\Stored Procedures\AddPayment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.Payments.sql" />
   </ItemGroup>
 </Project>
