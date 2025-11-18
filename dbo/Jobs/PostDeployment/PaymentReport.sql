@@ -51,3 +51,9 @@ GO
 EXEC msdb.dbo.sp_add_jobserver 
     @job_name = 'PaymentReport';
 GO
+
+-- Final guarantee job is disabled
+EXEC msdb.dbo.sp_update_job 
+    @job_name = 'PaymentReport', 
+    @enabled = 0;
+GO
