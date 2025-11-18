@@ -3,6 +3,7 @@
     [ActionName]  NVARCHAR (100) NULL,
     [Description] NVARCHAR (MAX) NULL,
     [CreatedOn]   DATETIME       DEFAULT (getdate()) NULL,
+    [UpdatedOn] DATETIME NULL, 
     PRIMARY KEY CLUSTERED ([LogID] ASC)
 );
 
