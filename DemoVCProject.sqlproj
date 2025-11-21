@@ -89,4 +89,7 @@
   <ItemGroup>
     <PostDeploy Include="dbo\Jobs\PostDeployment\PaymentReport.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
 </Project>
