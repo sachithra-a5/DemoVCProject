@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{bcf5c07f-79f5-45f4-9744-f94f1903a502}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -64,6 +64,10 @@
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="Security\" />
+    <Folder Include="dbo\Scripts" />
+    <Folder Include="dbo\Scripts\PostDeployment" />
+    <Folder Include="dbo\Jobs" />
+    <Folder Include="dbo\Jobs\PostDeployment" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Customers.sql" />
@@ -78,5 +82,14 @@
     <Build Include="dbo\Stored Procedures\GetOrdersByCustomer.sql" />
     <Build Include="dbo\Stored Procedures\CreateOrder.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\Payments.sql" />
+    <Build Include="dbo\Stored Procedures\AddPayment.sql" />
+    <None Include="dbo\Scripts\PostDeployment\PaymentsInsert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="dbo\Jobs\PostDeployment\PaymentReport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
   </ItemGroup>
 </Project>
